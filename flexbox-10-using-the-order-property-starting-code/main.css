@@ -20,12 +20,11 @@ body {
     border: 5px solid black;
     height: 1300px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     /*flex-flow: row wrap;*/
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-    align-content: center;
   }
 
 .item-1 {
@@ -34,7 +33,6 @@ body {
     padding: 10px;
     border: 5px solid black;
     margin: 10px;
-    order: 2;
 }
 
 .item-2 {
@@ -73,6 +71,8 @@ body {
     border: 5px solid black;
     margin: 10px;
     width: 350px;
+    height: 500px;
+    flex: 0 0 300px;
 }
 
 .item-6 {
@@ -82,4 +82,5 @@ body {
     border: 5px solid black;
     margin: 10px;
     width: 350px;
+    flex-shrink: 4;
 }
