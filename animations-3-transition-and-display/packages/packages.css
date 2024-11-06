@@ -29,6 +29,7 @@ main {
     border-left: none;
     position: relative;
     overflow: hidden;
+    transition: transform 500ms ease;
 }
 
 .package:hover,
@@ -36,6 +37,16 @@ main {
     box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     border-color: #ff5454;
     /* border-color: #ff5454 !important; */
+    transform: scale(1.1) translate(50px, 0px);
+}
+
+@keyframes package {
+    from {
+        transform: scale(1.0) translate(0, 0);
+    }
+    to {
+        transform: scale(1.1) translate(50px, 0px);
+    }
 }
 
 .package a {
